@@ -21,6 +21,13 @@ public class Artista {
     public Artista() {
         this.musicas = new ArrayList<>();
     }
+
+    public Artista(String nome, TipoArtista tipoArtista) {
+        this.nome = nome;
+        this.tipoArtista = tipoArtista;
+        this.musicas = new ArrayList<>();
+    }
+
     public Long getId() {
         return id;
     }

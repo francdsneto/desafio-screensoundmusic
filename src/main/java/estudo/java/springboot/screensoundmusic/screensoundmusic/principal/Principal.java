@@ -152,10 +152,7 @@ public class Principal {
         System.out.println("Informe o tipo desse artista: (solo, dupla, banda)");
         var tipoArtista = scanner.nextLine();
 
-
-        Artista artista = new Artista();
-        artista.setNome(nomeArtista);
-        artista.setTipoArtista(TipoArtista.porNome(tipoArtista));
+        Artista artista = new Artista(nomeArtista,TipoArtista.porNome(tipoArtista));
 
         return artista;
     }
