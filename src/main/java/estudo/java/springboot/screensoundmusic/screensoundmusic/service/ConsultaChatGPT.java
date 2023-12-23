@@ -5,8 +5,7 @@ import com.theokanning.openai.service.OpenAiService;
 
 public class ConsultaChatGPT {
     public static String obterInformacoesSobreArtista(String artistaNome) {
-        var openAiKey = System.getenv("OPENAI_API_KEY");
-        OpenAiService service = new OpenAiService(openAiKey);
+        OpenAiService service = new OpenAiService(System.getenv("OPENAI_API_KEY"));
 
         CompletionRequest requisicao = CompletionRequest.builder()
                 .model("text-davinci-003")
